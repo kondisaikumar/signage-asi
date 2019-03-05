@@ -1,0 +1,18 @@
+<div class="container-fluid">
+<ng-container *ngIf="type === 1;else second">
+  <iframe width="100%" height="700" [src]="pathtemp | safe"></iframe>
+
+</ng-container>
+<ng-template #second>
+  <ng-container   *ngIf="type === 3;else third">
+    <div class="bgContainer">
+    <img [src]="path">
+  </div>
+  </ng-container>
+</ng-template>
+<ng-template #third>
+  <video id="video_player"  muted autoplay>
+    <source [src]="path">
+  </video>
+</ng-template>
+</div>

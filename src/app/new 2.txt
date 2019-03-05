@@ -1,0 +1,16 @@
+onDelete(id, i) {
+for (let f = 0; f < this.deviceDetails.length; f++) {
+  if (this.deviceDetails[f].STOREPLAYLISTID === id) {
+alert('you cannot delete the playlist because it is assigned to a device');
+  } else {
+    const r = confirm('Are you sure want to delete?');
+    if (r === true) {
+    this.customerService.deleteStorePlaylist(id).subscribe(
+      (data: any) => {
+        this.getplaylistdata.splice(i, 1);
+      });
+  }
+}
+
+  }
+}
