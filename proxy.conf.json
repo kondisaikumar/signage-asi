@@ -1,0 +1,10 @@
+{
+    "/gettoken/*": {
+        "target": "http://34.207.100.215:8091",
+        "secure": false,
+        "pathRewrite": {
+            "^/gettoken": ""
+        },
+        "changeOrigin": true
+    }
+}

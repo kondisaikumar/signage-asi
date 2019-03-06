@@ -6,7 +6,7 @@ import { LoginRegisterReset } from '../models/login-register-reset';
 import {AddDevics} from '../models/add-device-request';
 import {DeleteDevics} from '../models/delete-device-request';
 import { ResponseLogin } from '../models/responselogin-register-reset';
-import { baseUrl, UrlNames } from '../url.provider';
+import { baseUrl, UrlNames, VantivURLs } from '../url.provider';
 import { ErrorHandlerService } from '../shared/services/error-handler.service';
 import { AuthService } from '../auth.service';
 import { URLSearchParams, RequestOptions } from '@angular/http';
@@ -31,7 +31,7 @@ export class CustomerService {
     .set(`grant_type`, reqParams.grant_type);
   const headers = new HttpHeaders({ 'Content-Type': 'application/x-www-form-urlencoded' });
     // tslint:disable-next-line:max-line-length
-    return this.http.post<any>(baseUrl + UrlNames.GetToken, body.toString(), { headers} ).pipe(
+    return this.http.post<any>('/gettoken/api/GetToken', body.toString(), { headers} ).pipe(
       switchMap((res: any) => {
         console.log(res);
         this.LoginResponse = res;

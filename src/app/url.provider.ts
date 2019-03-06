@@ -6,8 +6,8 @@ export enum UrlNames {
     UpdateStorePlaylist = '/api/Store/PlayList/Update',
     deleteStorePlaylist = '/api/Store/PlayList/Delete',
     getstorecontent = '/api/Content/Get',
-   deletestorecontent = '/api/Content/Delete',
-   addstorecontent = '/api/Content/Add',
+    deletestorecontent = '/api/Content/Delete',
+    addstorecontent = '/api/Content/Add',
     deleteStoreProductsList = '/api/StoreProducts/List/Delete',
     DelecteDevices = '/api/Store/Devices/Delete',
     ValidateUser = '/api/Validate/User',
@@ -16,6 +16,8 @@ export enum UrlNames {
     GetDEvices = '/api/Store/Devices/Get',
     AddDevices = '/api/Store/Devices/Add',
     GetToken = '/api/GetToken',
-    UpdateDevices = '/api/Store/Devices/Update',
-
+    UpdateDevices = '/api/Store/Devices/Update'
+}
+export enum VantivURLs {
+    gettoken = 'http://34.207.100.215:8091/api/GetToken',
 }
