@@ -16,6 +16,8 @@ import { TokenInterceptor } from './services/token.interceptor';
 import { LoginComponent } from './login/login.component';
 import { PreviewComponent } from './preview/preview.component';
 import { SafePipe } from './preview/safePipe';
+import { VgCoreModule } from 'videogular2/core';
+import { VgControlsModule } from 'videogular2/controls';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +29,8 @@ import { SafePipe } from './preview/safePipe';
     StoreModule.forRoot({customer: customerReducer}),
     EffectsModule.forRoot([CustomerEffects]),
      AppRoutingModule,
+     VgCoreModule,
+       VgControlsModule,
      MDBBootstrapModule.forRoot(),
      BrowserAnimationsModule
   ],

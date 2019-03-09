@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --proxy-config proxy.conf.json",
+    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -19,9 +19,9 @@
     "@angular/http": "^6.1.0",
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
+    "@angular/router": "^6.1.0",
     "@ngrx/effects": "^6.1.0",
     "@ngrx/store": "^6.1.0",
-    "@angular/router": "^6.1.0",
     "@types/bootbox": "^4.4.36",
     "angular-bootstrap-md": "^7.1.0",
     "angular-datatables": "^6.0.0",
@@ -36,6 +36,7 @@
     "ng2-toastr": "^4.1.2",
     "rxjs": "^6.0.0",
     "rxjs-compat": "^6.0.0",
+    "videogular2": "^6.4.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
@@ -43,6 +44,7 @@
     "@angular/cli": "~6.2.4",
     "@angular/compiler-cli": "^6.1.0",
     "@angular/language-service": "^6.1.0",
+    "@types/core-js": "^2.5.0",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",

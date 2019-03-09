@@ -1,7 +1,9 @@
 {
     "/gettoken/*": {
+        "host": "0.0.0.0",
         "target": "http://34.207.100.215:8091",
         "secure": false,
+        "logLevel": "debug",
         "pathRewrite": {
             "^/gettoken": ""
         },

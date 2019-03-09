@@ -78,6 +78,7 @@
             "styles": [
               "src/styles.scss",
               "../node_modules/datatables.net-dt/css/jquery.dataTables.css",
+              "../node_modules/videogular2/fonts/videogular.css",
               "../node_modules/font-awesome/scss/font-awesome.scss",
               "../node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
               "../node_modules/angular-bootstrap-md/scss/mdb-free.scss"

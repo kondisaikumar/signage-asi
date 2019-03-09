@@ -1,4 +1,5 @@
-export const baseUrl = 'http://34.207.100.215:8091';
+export const baseUrlt = 'http://183.82.43.147:9990/';
+export const baseUrl = 'http://183.82.43.147:9991/';
 export enum UrlNames {
     getbyPriority = '/api/Store/PlayList/GetByPriority',
     addStorePlaylist = '/api/Store/PlayList/Add',
